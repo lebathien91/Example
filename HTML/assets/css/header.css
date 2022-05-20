@@ -1,0 +1,36 @@
+.top {
+  background-color: var(--bg-top);
+}
+
+.top .navbar-link {
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+
+.site-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+}
+
+.top .share-social a:first-child {
+  margin-left: 0;
+}
+
+.top .share-social a:last-child {
+  margin-right: 0;
+}
+
+.top .facebook,
+.top .twitter,
+.top .copy-link {
+  color: var(--white-color);
+  font-size: 2.3rem;
+  line-height: 30px;
+}
+.top .copy-link {
+  cursor: pointer;
+  line-height: 0px;
+}

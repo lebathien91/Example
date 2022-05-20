@@ -1,0 +1,47 @@
+.mainContent {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.content {
+  flex: 3;
+  margin-right: 20px;
+}
+@media (max-width: 1280px) {
+  .content {
+    flex: 7;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    flex: 7;
+  }
+}
+@media (max-width: 868px) {
+  .content {
+    flex: 4;
+  }
+}
+
+@media (max-width: 740px) {
+  .mainContent {
+    flex-direction: column;
+  }
+  .content {
+    margin-right: 0px;
+  }
+}
+.mainContent.wiki {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.content.wiki {
+  margin-right: 0;
+  display: flex;
+}
+/* Start Grid */
+.grid.content {
+  margin-right: 0px;
+}
+
+/* End Grid */

@@ -1,0 +1,38 @@
+
+/* Start Article-List */
+.list .article {
+    padding: 0 10px;
+}
+
+.list .article .article-header {
+    padding: 5px;
+}
+
+.list .article-main {
+    flex-direction: row;
+}
+
+
+.list.reverse .article-main {
+    flex-direction: row-reverse;
+}
+
+.list .article-main .article-figure {
+    width: 300px;
+}
+
+.list .article-main .article-content {
+    padding-left: 15px;
+}
+
+.list.reverse .article-main .article-content {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.list .article-content .article-title {
+    margin-top: 5px;
+}
+
+
+/* End Article-List */

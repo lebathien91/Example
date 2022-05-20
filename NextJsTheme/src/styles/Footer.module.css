@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--bg-footer);
+  border-bottom: 5px solid var(--border-footer);
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+.footer a {
+  color: var(--white-color);
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.info a {
+  color: var(--border-footer);
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+@media (max-width: 740px) {
+  .backToTop.isWiki {
+    display: none;
+  }
+  .bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.backTop {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: var(--hover-color);
+}
+.backTop:hover {
+  color: var(--bg-top);
+}

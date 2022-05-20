@@ -1,0 +1,81 @@
+
+POST http://localhost:5000/diseases/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU2NDVkMGQ5YzJiMzZhN2E2NzY4NzIiLCJpYXQiOjE2NDk4MjExMzZ9.5Li_gSJeQmpSo3PUV6QfF56giUDjG0xwtkldZGIU6nI
+
+{
+    "name": "tiêu đề 2",
+    "description":"Phần mô tả cho bài viết 2",
+    "body":"Phần nội dung chính cho bài viết 2"
+}
+
+
+###
+GET http://localhost:5000/diseases
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk4MjEyODF9.L_3qhmFWXlpb21M6WK3xDt6TqCZiQJVxy3J5_XrHdLQ
+
+
+###
+GET http://localhost:5000/diseases/62558e3649a133c4fb38592d
+
+###
+PUT http://localhost:5000/diseases/update/625591e6e6c728df81fcfa7e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk3NzA0NzB9.LDyGd-89elVhNDOXcBuzbH13J9KliiHOtrDp9gkq_34
+
+{
+    "name": "name 3",
+    "description":"description 3",
+    "body":"body 3"
+}
+
+
+###
+DELETE http://localhost:5000/diseases/destroy/62558e3649a133c4fb38592d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk3NzA0NzB9.LDyGd-89elVhNDOXcBuzbH13J9KliiHOtrDp9gkq_34
+
+###
+
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "username": "kuchuoi1",
+    "email":"kuchuoi1@gmail.com",
+    "password":"123456"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "kuchuoi",
+    "password":"123456789"
+}
+
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk3NzA0NzB9.LDyGd-89elVhNDOXcBuzbH13J9KliiHOtrDp9gkq_34
+
+###
+GET http://localhost:5000/users/kuchuoi
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk3NzA0NzB9.LDyGd-89elVhNDOXcBuzbH13J9KliiHOtrDp9gkq_34
+
+
+###
+PUT http://localhost:5000/users/update/62557c010e1b425baecba0b0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1N2MwMTBlMWI0MjViYWVjYmEwYjAiLCJpYXQiOjE2NDk3NzA0NzB9.LDyGd-89elVhNDOXcBuzbH13J9KliiHOtrDp9gkq_34
+
+{
+    "password":"123456789"
+}
+
+###
+DELETE http://localhost:5000/users/destroy/6255419274c6f364248939ce
+Content-Type: application/json

@@ -1,0 +1,27 @@
+.top {
+  background-color: var(--bg-top);
+  display: flex;
+}
+.top a {
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+
+.navSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .navSocial {
+    flex-direction: column;
+  }
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+}

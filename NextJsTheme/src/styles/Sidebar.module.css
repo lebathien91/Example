@@ -1,0 +1,27 @@
+.sidebar {
+  flex: 1;
+  margin-left: 20px;
+}
+@media (max-width: 1280px) {
+  .sidebar {
+    flex: 3;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    flex: 4;
+  }
+}
+@media (max-width: 868px) {
+  .sidebar {
+    flex: 3;
+  }
+}
+@media (max-width: 740px) {
+  .sidebar {
+    margin-left: 0px;
+  }
+}
+.sidebar a {
+  color: var(--text-color);
+}

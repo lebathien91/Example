@@ -1,0 +1,185 @@
+.main-content.books .content {
+  margin-right: 0px;
+}
+
+.books .heading-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.books .heading-block .title-block {
+  font-size: 2.6rem;
+  color: var(--text-color);
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.books .heading-block .title-block::after {
+  display: block;
+  width: 60%;
+  content: "";
+  border-bottom: 3px solid var(--border-footer);
+  transition: all 300ms;
+}
+.books .heading-block .title-block:hover::after {
+  width: 100%;
+}
+.books .heading-block .views-all {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 0px;
+}
+.books .list-posts {
+  margin-bottom: 15px;
+}
+
+.books .list-posts .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.books .list-posts .row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.books .content .card {
+  width: 16.66666666%;
+}
+
+.books .content .article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.books .content .article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgb(188 188 188 / 80%);
+}
+
+.books .article .article-header {
+  display: none;
+}
+
+.books .article .article-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.books .article-figure img {
+  width: 100%;
+  height: 300px;
+}
+
+.books .article .badge {
+  display: block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.books .badge::before,
+.books .badge::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 10px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.books .badge::before {
+  top: 0;
+  right: 5px;
+  transform: rotate(-5deg);
+}
+.books .badge::after {
+  bottom: 5px;
+  transform: rotate(5deg);
+  left: 0;
+}
+
+.books .badge span {
+  position: absolute;
+  display: block;
+  width: 120px;
+  padding: 2px 0;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  color: var(--white-color);
+  text-align: center;
+  right: -10px;
+  font-weight: 600;
+  font-size: 10px;
+  top: 20px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.books .badge.featured::before,
+.books .badge.featured::after,
+.books .badge.featured span {
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
+}
+
+.books .badge.trending::before,
+.books .badge.trending::after,
+.books .badge.trending span {
+  background-color: var(--trending-color);
+  border-color: var(--trending-color);
+}
+
+.books .badge.new::before,
+.books .badge.new::after,
+.books .badge.new span {
+  background-color: var(--newpost-color);
+  border-color: var(--newpost-color);
+}
+
+.books .article-main .article-content {
+  padding-right: 6px;
+  padding-left: 16px;
+}
+
+.books .article-main .article-content h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0px;
+  margin-top: 1rem;
+}
+
+.books .article-main .article-content .article-description {
+  height: 75px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 5px 0px;
+}
+
+.books .article .article-footer {
+  padding-right: 10px;
+  padding-left: 16px;
+}

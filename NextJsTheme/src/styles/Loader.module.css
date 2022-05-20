@@ -1,0 +1,61 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 12px;
+}
+.ellipsis span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.ellipsis span:nth-child(1) {
+  left: 8px;
+  animation: ellipsis1 0.6s infinite;
+}
+.ellipsis span:nth-child(2) {
+  left: 8px;
+  animation: ellipsis2 0.6s infinite;
+}
+.ellipsis span:nth-child(3) {
+  left: 32px;
+  animation: ellipsis2 0.6s infinite;
+}
+.ellipsis span:nth-child(4) {
+  left: 56px;
+  animation: ellipsis3 0.6s infinite;
+}
+@keyframes ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

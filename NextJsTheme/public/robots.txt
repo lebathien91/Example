@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kuchuoi.com
+
+# Sitemaps
+Sitemap: https://kuchuoi.com/sitemap.xml

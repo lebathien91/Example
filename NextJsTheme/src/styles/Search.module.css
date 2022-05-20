@@ -1,0 +1,64 @@
+.input {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 0%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+
+.input:focus {
+  outline: none;
+}
+.input.show {
+  width: 100%;
+  opacity: 1;
+}
+.open,
+.close {
+  display: none;
+  margin-right: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.open.show,
+.close.show {
+  display: block;
+}
+
+.box .list {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 100%;
+  left: 0px;
+  border-radius: 0 0 6px 6px;
+  border-top: 2px solid #f53d2d;
+}
+
+.box .list.show {
+  display: block;
+}
+
+.box .item {
+  list-style: none;
+}
+
+.box .item a {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  padding: 0px 15px;
+}
+.box .item a:hover {
+  background-color: var(--menu-hover-color);
+}

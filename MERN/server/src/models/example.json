@@ -1,0 +1,47 @@
+{
+  "name": "tiêu hóa",
+  "slug": "tieu-hoa",
+  "diseases": [
+    {
+      "name": "viêm gan B",
+      "slug": "viem-gan-b",
+      "decription": "viêm gan B là bệnh phổ biến ở châu Á",
+      "parts": [
+        {
+          "name": "chương 1",
+          "articles": [
+            {
+              "title": "Tổng quan về viêm gan B",
+              "slug": "tong-quan-ve-viem-gan-b",
+              "description": "Bài viết giới thiệu về tổng quan của bệnh viêm gan B",
+              "content": "Đây là phần nội dung trình bày về các vấn đề của bệnh"
+            },
+            {
+              "title": "Tổng quan về viêm gan B",
+              "slug": "tong-quan-ve-viem-gan-b",
+              "description": "Bài viết giới thiệu về tổng quan của bệnh viêm gan B",
+              "content": "Đây là phần nội dung trình bày về các vấn đề của bệnh"
+            }
+          ]
+        },
+        {
+          "name": "chương 2",
+          "articles": [
+            {
+              "title": "Tổng quan về viêm gan B",
+              "slug": "tong-quan-ve-viem-gan-b",
+              "description": "Bài viết giới thiệu về tổng quan của bệnh viêm gan B",
+              "content": "Đây là phần nội dung trình bày về các vấn đề của bệnh"
+            },
+            {
+              "title": "Tổng quan về viêm gan B",
+              "slug": "tong-quan-ve-viem-gan-b",
+              "description": "Bài viết giới thiệu về tổng quan của bệnh viêm gan B",
+              "content": "Đây là phần nội dung trình bày về các vấn đề của bệnh"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

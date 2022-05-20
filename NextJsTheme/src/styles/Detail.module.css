@@ -1,0 +1,173 @@
+.wiki {
+  background-color: var(--white-color);
+  margin-left: -9999px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 9999px;
+  padding-right: 30px;
+  margin-right: 0;
+  flex: 3;
+}
+@media (max-width: 1280px) {
+  .wiki {
+    flex: 7;
+  }
+}
+@media (max-width: 1024px) {
+  .wiki {
+    flex: 7;
+  }
+}
+@media (max-width: 868px) {
+  .wiki {
+    flex: 4;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .authorDate {
+  display: flex;
+  align-items: center;
+}
+
+.header .author {
+  display: block;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.author img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nameAuthor a,
+.author-decription a {
+  font-size: 1.6rem;
+
+  color: var(--hover-color);
+  font-weight: bold;
+}
+
+.body p,
+.body li {
+  overflow-wrap: anywhere;
+}
+
+.body h1,
+.body h2,
+.body h3,
+.body h4,
+.body h5 {
+  scroll-margin-top: 80px;
+}
+
+.body img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+.body figure {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.body .anchor {
+  margin-left: -20px;
+  padding-right: 4px;
+  float: left;
+}
+.body .anchor:hover {
+  text-decoration: none;
+}
+.body figcaption {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.body a {
+  color: var(--link-color);
+}
+.body a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+.body blockquote {
+  background-color: rgba(255, 229, 100, 0.3);
+  border-left-color: #ffe564;
+  border-left-width: 9px;
+  border-left-style: solid;
+  padding: 20px 45px 20px 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.references .title {
+  display: inline-block;
+  cursor: pointer;
+}
+.references span {
+  margin-left: 5px;
+}
+.referencesContent {
+  display: none;
+}
+
+.tags {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  display: inline-flex;
+}
+
+.tags span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.tags .item {
+  background: #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.pagination {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.pagination .prev {
+  padding-right: 25px;
+  text-align: left;
+}
+
+.pagination .next {
+  padding-left: 25px;
+  text-align: right;
+}
+.pagination span {
+  display: block;
+  color: var(--bg-footer);
+}
+.pagination a {
+  line-height: 3.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pagination a:hover {
+  color: var(--bg-top);
+}
+
+.wiki-content #comments {
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 25px;
+}

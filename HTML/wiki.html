@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/avatar.jpg"
+      type="image/x-icon"
+    />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/main-menu.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/wiki.css" />
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="top">
+        <div class="container">
+          <nav class="navbars">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="/" class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Blog</a>
+              </li>
+              <li class="navbar-item">
+                <a href="about.html" class="navbar-link">About</a>
+              </li>
+              <li class="navbar-item">
+                <a href="/contact.html" class="navbar-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="share-social">
+              <a href="#" class="facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="logo-slogan">
+        <div class="container">
+          <h1 class="site-title"><a href="/">My Blog</a></h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-menu">
+      <div class="container">
+        <div class="nav-search">
+          <span class="nav-mobile-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </span>
+          <div class="nav-overlay"></div>
+          <nav class="navbars">
+            <div class="brand">
+              <div class="mobile-logo">
+                <img src="./assets/images/avatar.jpg" alt="" srcset="" />
+              </div>
+              <span class="nav-mobile-close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="books.html" class="navbar-link">Ebooks</a>
+              </li>
+              <li class="navbar-item">
+                <a href="grid.html" class="navbar-link">Danh mục Grid</a>
+              </li>
+              <li class="navbar-item">
+                <a href="loop.html" class="navbar-link">Danh mục Loop</a>
+              </li>
+              <li class="navbar-item">
+                <a href="list.html" class="navbar-link">Danh mục List</a>
+              </li>
+              <li class="navbar-item">
+                <a href="single.html" class="navbar-link">Single Page</a>
+              </li>
+              <li class="navbar-item">
+                <a href="wiki.html" class="navbar-link">Wiki Page</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="search-form" action="#" method="post">
+            <input
+              class="search-input"
+              type="text"
+              name="search"
+              placeholder="Nhập từ khóa và lấy búa đập phím Enter"
+            />
+          </form>
+          <span class="nav-search-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </span>
+          <span class="nav-search-btn show">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-content wiki">
+          <!-- start Content -->
+          <section id="content" class="content show">
+            <article class="wiki-article">
+              <div class="wiki-main">
+                <div class="wiki-content">
+                  <h1 class="wiki-title">
+                    Tiêu đề bài viết dài khoảng hai dòng Tiêu đề bài viết dài
+                    khoảng hai dòng Tiêu đề bài viết dài khoảng hai dòng
+                  </h1>
+                  <header class="wiki-header">
+                    <div class="author-date">
+                      <span class="wiki-author">
+                      <span class="wiki-author-time">
+                        <span class="wiki-date"><time>09/07/2021</time></span>
+                        <span class="wiki-name-author">by <a href="#">Admin</a></span>
+                      </span>
+                    </div>
+
+                    <div class="share-social">
+                      <a href="#" class="facebook">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26"
+                          height="26"
+                          fill="currentColor"
+                          class="bi bi-facebook"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="#" class="twitter">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26"
+                          height="26"
+                          fill="currentColor"
+                          class="bi bi-twitter"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="#" class="instagram">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="26"
+                          height="26"
+                          fill="currentColor"
+                          class="bi bi-instagram"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </header>
+                  <div class="wiki-body">
+                    <h1>Đây là đoạn văn thể hiện headding 1</h1>
+                    <h2>Đây là đoạn văn thể hiện headding 2</h2>
+                    <h3>Đây là đoạn văn thể hiện headding 3</h3>
+                    <h4>Đây là đoạn văn thể hiện headding 4</h4>
+                    <h5>Đây là đoạn văn thể hiện headding 5</h5>
+                    <h6>Đây là đoạn văn thể hiện headding 6</h6>
+                    <ul>
+                      <li>Đây là danh sách số 1</li>
+                      <li>Đây là danh sách số 2</li>
+                      <li>Đây là danh sách số 3</li>
+                      <li>Đây là danh sách số 4</li>
+                      <li>Đây là danh sách số 5</li>
+                      <li>Đây là danh sách số 6</li>
+                    </ul>
+                    <ol>
+                      <li>Đây là danh sách số 1</li>
+                      <li>Đây là danh sách số 2</li>
+                      <li>Đây là danh sách số 3</li>
+                      <li>Đây là danh sách số 4</li>
+                      <li>Đây là danh sách số 5</li>
+                      <li>Đây là danh sách số 6</li>
+                    </ol>
+                    <p>
+                      Lorem Ipsum chỉ đơn giản là <a href="#">văn bản</a> giả
+                      của ngành in ấn và sắp chữ. Lorem Ipsum đã trở thành văn
+                      bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một
+                      nhà in không xác định lấy một dãy loại và xáo trộn nó để
+                      tạo thành một cuốn sách mẫu. Nó đã tồn tại không chỉ năm
+                      thế kỷ, mà còn là bước nhảy vọt vào lĩnh vực sắp chữ điện
+                      tử, về cơ bản vẫn không thay đổi. Nó được phổ biến vào
+                      những năm 1960 với việc phát hành các tờ Letraset chứa các
+                      đoạn Lorem Ipsum, và gần đây là phần mềm xuất bản trên máy
+                      tính để bàn như Aldus PageMaker bao gồm các phiên bản của
+                      Lorem Ipsum.
+                    </p>
+                    <blockquote>
+                    <p>Note</p>
+                    <p>Although React 17 switched from focus to focusin under the hood for the onFocus event, note that this has not affected the bubbling behavior.
+                      In React, onFocus event has always bubbled, and it continues to do so in React 17 because generally it is a more useful default.
+                      See this sandbox for the different checks you can add for different particular use cases.</p>
+                    </blockquote>
+                    <p>
+                      Lorem Ipsum chỉ đơn giản là <a href="#">văn bản</a> giả
+                      của ngành in ấn và sắp chữ. Lorem Ipsum đã trở thành văn
+                      bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một
+                      nhà in không xác định lấy một dãy loại và xáo trộn nó để
+                      tạo thành một cuốn sách mẫu. Nó đã tồn tại không chỉ năm
+                      thế kỷ, mà còn là bước nhảy vọt vào lĩnh vực sắp chữ điện
+                      tử, về cơ bản vẫn không thay đổi. Nó được phổ biến vào
+                      những năm 1960 với việc phát hành các tờ Letraset chứa các
+                      đoạn Lorem Ipsum, và gần đây là phần mềm xuất bản trên máy
+                      tính để bàn như Aldus PageMaker bao gồm các phiên bản của
+                      Lorem Ipsum.
+                    </p>
+                    <p>
+                      Lorem Ipsum chỉ đơn giản là <a href="#">văn bản</a> giả
+                      của ngành in ấn và sắp chữ. Lorem Ipsum đã trở thành văn
+                      bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một
+                      nhà in không xác định lấy một dãy loại và xáo trộn nó để
+                      tạo thành một cuốn sách mẫu. Nó đã tồn tại không chỉ năm
+                      thế kỷ, mà còn là bước nhảy vọt vào lĩnh vực sắp chữ điện
+                      tử, về cơ bản vẫn không thay đổi. Nó được phổ biến vào
+                      những năm 1960 với việc phát hành các tờ Letraset chứa các
+                      đoạn Lorem Ipsum, và gần đây là phần mềm xuất bản trên máy
+                      tính để bàn như Aldus PageMaker bao gồm các phiên bản của
+                      Lorem Ipsum.
+                    </p>
+                  </div>
+
+                <div class="article-tags">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z" />
+                    </svg>
+                  </span>
+                  <span class="tag-item">
+                      <a href="#">tag 1</a>
+                  </span>
+                  <span class="tag-item">
+                      <a href="#">tag 2</a>
+                  </span>
+                </div>
+
+                <div class="author-box">
+                  <div class="author-avatar">
+                    <a href="#">
+                      <img
+                        src="./assets/images/avatar.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </a>
+                  </div>
+                  <div class="author-decription">
+                    <a href="#">Tên tác giả</a>
+                    <p>
+                      Đây là phần giới thiệu chi tiết về tác giả và những sở
+                      thích cũng như đam mê liên quan hoặc có thể là quảng cáo
+                      bản thân :D
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="post-pagination">
+                  <div class="prev-post">
+                    <span>bài trước</span>
+                      <a href="#">Tiêu đề bài trước</a>
+                  </div>
+
+                  <div class="next-post">
+                    <span>bài kế tiếp</span>
+                      <a href="#">Tiêu đề bài sau</a>
+                  </div>
+                </div>
+
+                <section id="comments">
+                  <div class="form-comments">
+                    <textarea name="form-comment" cols="30" rows="10"></textarea>
+                  </div>
+                    <h2>List Comment</h2>
+                </section>
+
+                </div>
+              </div>
+              <footer class="wiki-footer"></footer>
+            </article>
+          </section>
+
+          <!-- start Sidebar -->
+          <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+              <ul class="sidebar-list show">
+                  <h2 style="margin-top: 0;">Mục lục</h2>
+                <li class="list-item">
+                  <a href="#">Đây là thẻ headding 2 dài hơn hai dòng hoặc dài hơn</a>
+                  <ul>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3 dài hơn hai dòng hoặc dài hơn</a></li>
+                    <li class="list-item"><a class="active" href="#"><span class="icon-border"></span>Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <a href="#">Đây là thẻ headding 2 dài hơn hai dòng hoặc dài hơn</a>
+                  <ul>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <a href="#">Đây là thẻ headding 2</a>
+                  <ul>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <a href="#">Đây là thẻ headding 2</a>
+                  <ul>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                    <li class="list-item"><a href="#">Đây là thẻ heading 3</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </nav>
+          </aside>
+            <div class="table-content">
+              <div class="table-width">
+                <div class="table-height">
+                <div class="table-content-button">
+                <svg class="table-top-svg" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15">
+                    <g transform="translate(904.92214,-879.1482)">
+                      <path fill="currentColor" d="m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,-55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,-174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,-174.68583 0.6895,0 26.281,25.03215 56.8701,55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864-231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,-104.0616 -231.873,-231.248 z">
+                      </path>
+                    </g>
+                </svg>
+                <svg class="table-bottom-svg" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15">
+                  <g transform="translate(904.92214,-879.1482)">
+                    <path fill="currentColor" d="m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,-55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,-174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,-174.68583 0.6895,0 26.281,25.03215 56.8701,55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864-231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,-104.0616 -231.873,-231.248 z">
+                    </path>
+                  </g>
+                </svg>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- start FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="info">
+            <p>Copyright © 2021 by <a href="#">Ng0cMinh</a></p>
+          </div>
+          <nav class="navbars">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-link" href="/">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">About</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Contact</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Search</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

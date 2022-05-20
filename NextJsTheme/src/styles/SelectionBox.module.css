@@ -1,0 +1,38 @@
+.post {
+  margin: 0px;
+  padding: 0px;
+}
+
+.item {
+  list-style: none;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+.item a {
+  color: var(--text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.item a:hover {
+  color: var(--link-color-hover);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.img {
+  display: block;
+  width: 90px;
+  margin-right: 8px;
+}
+
+.item h4 {
+  margin: 0px;
+  padding: 0px;
+}

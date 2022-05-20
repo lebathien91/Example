@@ -1,0 +1,135 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 100% = 16px */
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white-color;
+
+  overflow-x: hidden;
+  font-size: 1.4rem;
+}
+
+h1 {
+  line-height: 4rem;
+}
+
+h2 {
+  line-height: 3rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2.5rem;
+}
+
+ul li,
+ol li {
+  line-height: 2.5rem;
+}
+
+p {
+  line-height: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px 5px;
+}
+table {
+  border-collapse: collapse;
+}
+input {
+  outline: none;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0.1rem solid #bbb;
+  border-radius: 0.3rem;
+  color: #222;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  font-size: 1.7rem;
+  height: 3.8rem;
+  justify-content: center;
+  line-height: 3.8rem;
+  margin: 0 0 0.8rem;
+  outline: none;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+img {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.img-fluid img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  max-width: 1400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @include sm {
+    max-width: 540px;
+  }
+  @include md {
+    max-width: 720px;
+  }
+  @include lg {
+    max-width: 960px;
+  }
+  @include xl {
+    max-width: 1140px;
+  }
+  @include xxl {
+    max-width: 1400px;
+  }
+}

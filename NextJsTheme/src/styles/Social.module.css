@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social .facebook,
+.social .twitter,
+.social .copyLink {
+  margin: 0 10px;
+  font-size: 2.3rem;
+}
+.social .copyLink {
+  line-height: 0;
+  cursor: pointer;
+}
+.facebook {
+  color: #385898;
+}
+
+.twitter {
+  color: rgb(29, 161, 242);
+}
+
+.copyLink {
+  color: #833ab4;
+}

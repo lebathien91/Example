@@ -1,0 +1,13 @@
+.pages {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 740px) {
+  .pages {
+    padding: 0px 10px;
+  }
+}
+
+.pages a {
+  color: var(--link-color);
+}

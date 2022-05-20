@@ -1,0 +1,134 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.item:first-child {
+  margin-left: 0;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+.item.active {
+  background-color: var(--menu-hover-color);
+}
+.mainMenu {
+  opacity: 1;
+}
+
+.mainMenu .brand {
+  display: none;
+}
+
+.mainMenu .link {
+  display: block;
+  line-height: 55px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mainMenu .item:hover {
+  background-color: var(--menu-hover-color);
+  color: var(--hover-color);
+}
+
+.active .link,
+.home .active {
+  color: var(--hover-color);
+}
+
+.mainMenu .link:hover {
+  color: var(--hover-color);
+}
+.mainMenu .home:hover {
+  background-color: transparent;
+}
+
+.home .active {
+  background-color: transparent;
+}
+.homeIcon {
+  margin-bottom: -5px;
+}
+
+.mainMenu .close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mainMenu {
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+  }
+  .mainMenu .brand {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .mainMenu .brand .logo {
+    border-radius: 50%;
+    border: #d20068 solid 1px;
+    box-shadow: 0 0 1px 5px rgb(210 0 104 / 15%),
+      0 0 1px 10px rgb(210 0 104 / 10%);
+  }
+  .mainMenu .brand .logo a {
+    display: block;
+    height: 50px;
+  }
+  .mainMenu .brand .logo img {
+    border-radius: 50%;
+  }
+
+  .mainMenu .list {
+    flex-direction: column;
+  }
+
+  .mainMenu .list .item {
+    list-style: none;
+    margin: 0px;
+    padding-left: 15px;
+  }
+  .mainMenu .list .home {
+    display: none;
+  }
+  .mainMenu.show {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  .mainMenu .close {
+    display: block;
+    cursor: pointer;
+  }
+}

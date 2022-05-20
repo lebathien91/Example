@@ -1,0 +1,25 @@
+/* Start Article-Loop */
+.loop .article .article-header {
+    padding: 6px 10px;
+}
+
+.loop .article-main {
+    flex-direction: column;
+}
+
+.loop.reverse .article-main {
+    flex-direction: column-reverse;
+}
+
+.loop .article-main .article-figure img {
+    width: 100%;
+}
+
+.loop .article-main .article-content {
+    padding: 0 10px;
+}
+
+.loop .article .article-footer {
+    padding: 0 10px
+}
+/* End Article-Loop */

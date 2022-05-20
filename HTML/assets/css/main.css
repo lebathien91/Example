@@ -1,0 +1,170 @@
+/* Start Main Content */
+.main-content {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.main-content .content {
+  flex: 3;
+  margin-right: 20px;
+}
+
+/* Start Article-List */
+.article {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  background-color: var(--white-color);
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+}
+
+.article:hover {
+  box-shadow: 0 10px 20px rgb(188 188 188 / 80%);
+}
+
+.article .article-header,
+.wiki-article .wiki-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article .article-title a:hover {
+  color: var(--link-color-hover);
+}
+
+.article .author-date {
+  display: flex;
+  align-items: center;
+}
+
+.article-header .article-author {
+  display: block;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.article-header .article-author img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.article-header .article-author-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-author-time .article-name-author {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.article-author-time .article-date {
+  font-size: 1.2rem;
+}
+
+.article .badge {
+  display: none;
+}
+
+.share-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-social a {
+  margin: 0px 10px;
+}
+
+.facebook {
+  color: #385898;
+}
+
+.twitter {
+  color: rgb(29, 161, 242);
+}
+
+.copy-link {
+  color: #833ab4;
+}
+
+.article-main {
+  display: flex;
+}
+
+.article-footer {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-footer .count-comments {
+  display: flex;
+}
+.article-footer .count-comments .text-comments {
+  margin-left: 5px;
+}
+
+/* Start Pagination */
+.pagination {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.pagination .navbar-item {
+  margin: 0 5px;
+}
+
+.pagination .navbar-link {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+.pagination .navbar-link:hover {
+  color: var(--link-color-hover);
+}
+/* End Article-List */
+
+/* Start Footer */
+.footer {
+  background-color: var(--bg-footer);
+  border-bottom: 5px solid var(--border-footer);
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+.footer .info a {
+  color: var(--border-footer);
+}
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.footer .navbar-link {
+  color: var(--white-color);
+}
+
+.footer .back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+@media (max-width: 740px) {
+  .footer .back-to-top.is-wiki {
+    display: none;
+  }
+}
+.footer .back-to-top .back-top {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: var(--hover-color);
+}
+.footer .back-to-top .back-top:hover {
+  color: var(--bg-top);
+}
