@@ -4,8 +4,12 @@ import Sidebar from "./Sidebar";
 const Main = ({ children }) => {
   return (
     <main className="main">
-      <Sidebar />
-      <Content>{children}</Content>
+      <div className="container-fluid">
+        <div className="row">
+          <Sidebar />
+          <Content> {children}</Content>
+        </div>
+      </div>
     </main>
   );
 };

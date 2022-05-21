@@ -87,7 +87,7 @@ class UserControllers {
       }
       const passwordValid = await argon2.verify(user.password, password);
       if (!passwordValid) {
-        return res.status(400).json({
+        return res.json({
           success: false,
           message: "Incorrect password",
         });

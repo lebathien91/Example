@@ -1,22 +1,32 @@
 import Layout from "@/components/Layout";
 import { fetchAPI } from "@/libs/api";
 
-const Diseases = () => {
-  const diseases = fetchAPI("http://localhost:5000/diseases");
-  console.log(diseases);
-
-  if (diseases.success) {
-    const posts = diseases.diseases;
-  }
-
+const Diseases = ({ diseases }) => {
   return (
     <Layout>
-      <div className="card">
-        <h2>headding 2</h2>
-        <p className="description">description</p>
-      </div>
+      {diseases.map((disease) => (
+        <div className="card" key={disease._id}>
+          <h2>headding 2</h2>
+          <p className="description">description</p>
+        </div>
+      ))}
     </Layout>
   );
 };
 
 export default Diseases;
+
+export async function getServerSideProps() {
+  const data = await fetchAPI("http://localhost:5000/diseases");
+
+  if (!data.success) {
+    console.log(data.message);
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { diseases: data.diseases },
+  };
+}
