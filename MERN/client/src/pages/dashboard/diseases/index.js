@@ -1,7 +1,22 @@
 import Layout from "@/components/Layout";
 import { fetchAPI } from "@/libs/api";
+import { useRouter } from "next/router";
+export default function Diseases({ diseases }) {
+  const router = useRouter();
+  const handeDestroy = async (id) => {
+    const options = {
+      method: "DELETE",
+    };
+    const data = await fetchAPI(
+      `http://localhost:5000/diseases/destroy/${id}`,
+      options
+    );
 
-export default function Dashboard({ diseases }) {
+    if (data.success) {
+      router.push("/dashboard");
+    }
+  };
+
   return (
     <Layout>
       <h2>Danh sách bài viết</h2>
@@ -23,7 +38,9 @@ export default function Dashboard({ diseases }) {
                 <td>{disease.name}</td>
                 <td>{disease.description}</td>
                 <td>placeholder</td>
-                <td>text</td>
+                <td>
+                  <button onClick={() => handeDestroy(disease._id)}>Xoá</button>
+                </td>
               </tr>
             ))}
           </tbody>

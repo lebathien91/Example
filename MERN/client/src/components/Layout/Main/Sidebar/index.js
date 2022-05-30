@@ -24,7 +24,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#">
+            <Link href="/dashboard/users/new">
               <a className="nav-link">
                 <span data-feather="file-text" />
                 Tạo mới
