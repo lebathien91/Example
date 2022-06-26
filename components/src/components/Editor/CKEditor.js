@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { checkImage, imageUpload } from "@/utils/imageUpload";
-const Editor = () => {
+const Editor = ({ setBody }) => {
   const editorRef = useRef();
   const [editorLoader, setEdiorLoaded] = useState(false);
 
@@ -55,7 +55,7 @@ const Editor = () => {
           editor={ClassicEditor}
           onChange={(event, editor) => {
             const data = editor.getData();
-            console.log(data);
+            setBody(data);
           }}
         />
       ) : (

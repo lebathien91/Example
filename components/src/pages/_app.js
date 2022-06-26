@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { GlobalState } from "@/store/GlobalState";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <GlobalState>
+      <Component {...pageProps} />
+    </GlobalState>
+  );
 }
 
-export default MyApp
+export default MyApp;
