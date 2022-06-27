@@ -6,7 +6,7 @@ export const checkImage = (
   let errMsg;
   if (!file) return (errMsg = "File does not exits");
   if (file.size > 1024 * 1024 * size)
-    return (errMsg = `The largest image size is ${size}mb`);
+    return (errMsg = `The largest image size is ${size} mb`);
 
   if (!types.includes(file.type))
     return (errMsg = "The image type is png/jpeg/webp/gif");

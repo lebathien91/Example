@@ -1,6 +1,11 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
+
+import { GlobalContext } from "@/store/GlobalState";
 import { checkImage, imageUpload } from "@/utils/imageUpload";
+
 const Editor = ({ setBody }) => {
+  const { state, dispatch } = useContext(GlobalContext);
+
   const editorRef = useRef();
   const [editorLoader, setEdiorLoaded] = useState(false);
 
@@ -19,12 +24,17 @@ const Editor = ({ setBody }) => {
     return {
       upload: async () => {
         try {
+          dispatch({ type: "NOTIFY", payload: { loading: true } });
           const file = await loader.file;
-          const check = checkImage(file);
 
-          if (check) console.log(check);
+          const check = checkImage(file);
+          console.log(check);
+          if (check)
+            return dispatch({ type: "NOTIFY", payload: { error: check } });
 
           const image = await imageUpload(file);
+
+          dispatch({ type: "NOTIFY", payload: { loading: false } });
 
           return {
             default: image.url,

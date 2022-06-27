@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 
 import reducers from "./Reducer";
 
-export const DataContext = createContext();
+export const GlobalContext = createContext();
 
 export const GlobalState = ({ children }) => {
   const initialState = { notify: {} };
@@ -10,8 +10,8 @@ export const GlobalState = ({ children }) => {
   const [state, dispatch] = useReducer(reducers, initialState);
 
   return (
-    <DataContext.Provider value={{ state, dispatch }}>
+    <GlobalContext.Provider value={{ state, dispatch }}>
       {children}
-    </DataContext.Provider>
+    </GlobalContext.Provider>
   );
 };
