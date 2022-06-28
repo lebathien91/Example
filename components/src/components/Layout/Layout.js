@@ -1,11 +1,18 @@
-import React from "react";
-import Display from "../Display";
+import Notify from "../Notify";
+import Seo from "../Seo";
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Display />
-      {children}
+      <Notify />
+      <Seo />
+
+      <Header />
+      <Main>{children}</Main>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,16 @@
+.BackToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+}
+
+.BackTop {
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: red;
+}
+.BackTop:hover {
+  color: blue;
+}

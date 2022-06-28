@@ -14,7 +14,7 @@ export const checkImage = (
   return errMsg;
 };
 
-export const imageUpload = async (image) => {
+export const uploadImage = async (image) => {
   const formData = new FormData();
 
   formData.append("file", image);
