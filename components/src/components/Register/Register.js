@@ -3,7 +3,7 @@ import { GlobalContext } from "@/store/GlobalState";
 import Link from "next/link";
 import styles from "./Register.module.css";
 import { register } from "@/utils/validate";
-import { postData, deleteData } from "@/utils/fetchData";
+import { postData } from "@/utils/fetchData";
 
 const Register = () => {
   const { state, dispatch } = useContext(GlobalContext);
@@ -50,8 +50,8 @@ const Register = () => {
         type: "NOTIFY",
         payload: { error: "Bạn cần đồng ý với điều khoản bảo mật" },
       });
-
-    const res = await deleteData("user");
+    const res = await postData("user");
+    console.log(res);
   };
 
   return (
