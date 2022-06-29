@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { GlobalContext } from "@/store/GlobalState";
 import Link from "next/link";
-import styles from "./Login.module.css";
+import styles from "./Register.module.css";
+import { register } from "@/utils/validate";
 
-const Login = () => {
+const Register = () => {
+  const { state, dispatch } = useContext(GlobalContext);
+
   const [formData, setFormData] = useState({
+    username: "",
     email: "",
     password: "",
-    checked: true,
+    cf_password: "",
+    checked: false,
   });
 
-  const { email, password, checked } = formData;
+  const { username, email, password, cf_password, checked } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -28,7 +34,21 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    const { username, email, password, cf_password, checked } = formData;
+
+    const msg = register(username, email, password, cf_password);
+
+    if (msg)
+      return dispatch({
+        type: "NOTIFY",
+        payload: { error: msg },
+      });
+
+    if (!checked)
+      return dispatch({
+        type: "NOTIFY",
+        payload: { error: "Bạn cần đồng ý với điều khoản bảo mật" },
+      });
   };
 
   return (
@@ -65,11 +85,19 @@ const Login = () => {
                 </svg>
               </span>
             </div>
-            <h3 className={styles.title}>Login</h3>
+            <h3 className={styles.title}>Đăng ký</h3>
             <form method="POST" action="#">
               <div className={styles.group}>
                 <input
-                  className={styles.email}
+                  name="username"
+                  type="username"
+                  placeholder="Tên"
+                  value={username}
+                  onChange={handleChangeInput}
+                />
+              </div>
+              <div className={styles.group}>
+                <input
                   name="email"
                   type="email"
                   placeholder="Email"
@@ -79,11 +107,19 @@ const Login = () => {
               </div>
               <div className={styles.group}>
                 <input
-                  className={styles.password}
                   name="password"
                   type="password"
                   placeholder="Mật khẩu"
                   value={password}
+                  onChange={handleChangeInput}
+                />
+              </div>
+              <div className={styles.group}>
+                <input
+                  name="cf_password"
+                  type="password"
+                  placeholder="Nhập lại mật khẩu"
+                  value={cf_password}
                   onChange={handleChangeInput}
                 />
               </div>
@@ -93,30 +129,26 @@ const Login = () => {
                   type="submit"
                   onClick={handleSubmit}
                 >
-                  Đăng nhập
+                  Đăng ký
                 </button>
               </div>
               <div className={styles.group}>
-                <div className={styles.w50}>
-                  <label className={styles.remember}>
-                    <input
-                      className={styles.checkbox}
-                      type="checkbox"
-                      checked={checked}
-                      onChange={handleCheckbox}
-                    />
-                    Remember Me
-                  </label>
-                </div>
-                <div className={`${styles.w50} ${styles.forgot}`}>
-                  <a href="#">Quên mật khẩu</a>
-                </div>
+                <label className={styles.remember}>
+                  <input
+                    className={styles.checkbox}
+                    type="checkbox"
+                    checked={checked}
+                    onChange={handleCheckbox}
+                  />
+                  <span>
+                    Tôi đồng ý với <a href="#">điều khoản bảo mật</a>
+                  </span>
+                </label>
               </div>
-
               <div className={styles.notmember}>
-                <span>Bạn không phải thành viên? </span>
-                <Link href="/register">
-                  <a>Đăng ký ngay</a>
+                <span>Bạn đã là thành viên? </span>
+                <Link href="/login">
+                  <a>Đăng nhập ngay</a>
                 </Link>
               </div>
             </form>
@@ -127,4 +159,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

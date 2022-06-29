@@ -18,7 +18,7 @@ const Toast = ({ type, content, handleShow }) => {
           </svg>
         </span>
       </div>
-      <div className={styles.body}>Nội dung thông báo</div>
+      <div className={styles.body}>{content.msg}</div>
     </div>
   );
 };

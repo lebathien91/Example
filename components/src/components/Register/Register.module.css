@@ -88,14 +88,8 @@
   font-weight: 700;
 }
 
-.w50 {
-  width: 50%;
-}
 .remember {
   display: flex;
-}
-.forgot {
-  text-align: right;
 }
 
 .group .checkbox {
