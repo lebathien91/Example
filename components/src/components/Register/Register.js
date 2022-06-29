@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { GlobalContext } from "@/store/GlobalState";
 import Link from "next/link";
 import styles from "./Register.module.css";
-import { register } from "@/utils/validate";
+import { validRegister } from "@/utils/validate";
 import { postData } from "@/utils/fetchData";
 
 const Register = () => {
@@ -37,7 +37,7 @@ const Register = () => {
     e.preventDefault();
     const { username, email, password, cf_password, checked } = formData;
 
-    const msg = register(username, email, password, cf_password);
+    const msg = validRegister(username, email, password, cf_password);
 
     if (msg)
       return dispatch({

@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { GlobalContext } from "@/store/GlobalState";
 import Link from "next/link";
+
 import styles from "./Login.module.css";
 
 const Login = () => {
+  const { state, dispatch } = useContext(GlobalContext);
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    checked: true,
+    remember: true,
   });
 
-  const { email, password, checked } = formData;
+  const { email, password, remember } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -22,12 +26,17 @@ const Login = () => {
   const handleCheckbox = () => {
     setFormData({
       ...formData,
-      checked: !checked,
+      remember: !remember,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!email || !password)
+      return dispatch({
+        type: "NOTIFY",
+        payload: { error: "Bạn phải nhập đầy đủ các trường" },
+      });
     console.log(formData);
   };
 
@@ -102,7 +111,7 @@ const Login = () => {
                     <input
                       className={styles.checkbox}
                       type="checkbox"
-                      checked={checked}
+                      checked={remember}
                       onChange={handleCheckbox}
                     />
                     Remember Me
