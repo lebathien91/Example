@@ -1,8 +1,7 @@
-import React from "react";
-import Layout from "@/components/Layout";
+import Dashboard from "@/views/Dashboard";
 
 const Me = () => {
-  return <Layout>Me</Layout>;
+  return <Dashboard>Me</Dashboard>;
 };
 
 export default Me;

@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/styles.scss";
 import { GlobalState } from "@/store/GlobalState";
 import Notify from "@/components/Notify";
 
