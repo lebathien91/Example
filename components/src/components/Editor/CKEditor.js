@@ -29,8 +29,13 @@ const Editor = ({ setBody }) => {
 
           const check = checkImage(file);
           console.log(check);
-          if (check)
-            return dispatch({ type: "NOTIFY", payload: { error: check } });
+
+          if (check) {
+            dispatch({ type: "NOTIFY", payload: { error: check } });
+            return {
+              default: "/imageUrlDefault.jpg",
+            };
+          }
 
           const image = await uploadImage(file);
 
