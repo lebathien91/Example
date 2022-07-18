@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  max-width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @include sm {
+    max-width: 540px;
+  }
+  @include md {
+    max-width: 720px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  @include lg {
+    max-width: 960px;
+  }
+  @include xl {
+    max-width: 1140px;
+  }
+  @include xxl {
+    max-width: 1400px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center-x {
+  justify-content: center;
+}
+.center-y {
+  align-items: center;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
