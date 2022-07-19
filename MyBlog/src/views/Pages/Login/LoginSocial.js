@@ -1,4 +1,4 @@
-import styles from "./LoginSocial.module.css";
+import styles from "./LoginSocial.module.scss";
 
 import { useState } from "react";
 

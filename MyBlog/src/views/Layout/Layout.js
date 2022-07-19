@@ -5,12 +5,12 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="default-layout">
+    <>
       <Seo />
       <Header />
       <Main>{children}</Main>
       <Footer />
-    </div>
+    </>
   );
 };
 

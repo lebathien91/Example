@@ -1,15 +1,11 @@
-import styles from "./Header.module.scss";
-
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className="container">
-        <div className={styles.wrap}>
-          <div className={styles.logo}>Logo</div>
-          <div className={styles.user}>
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
-          </div>
+    <header className="header">
+      <div className="flex space-between">
+        <div className="logo">Logo</div>
+        <div className="user">
+          <a href="/login">Login</a>
+          <a href="/register">Register</a>
         </div>
       </div>
     </header>

@@ -1,7 +1,11 @@
-import React from "react";
+import Layout from "@/views/Layout";
 
-const HomePage = () => {
-  return <div>HomePage</div>;
+const HomePage = ({ data }) => {
+  return (
+    <Layout>
+      <div className="container">{data}</div>
+    </Layout>
+  );
 };
 
 export default HomePage;

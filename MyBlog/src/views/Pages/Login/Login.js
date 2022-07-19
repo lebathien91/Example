@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { GlobalContext } from "@/store/GlobalState";
 import Link from "next/link";
 
-import styles from "./Login.module.css";
+import styles from "./Login.module.scss";
 
 const Login = () => {
   const { state, dispatch } = useContext(GlobalContext);
