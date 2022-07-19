@@ -1,4 +1,4 @@
-import Seo from "@/components/Seo";
+import Seo from "@/Components/Seo";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
