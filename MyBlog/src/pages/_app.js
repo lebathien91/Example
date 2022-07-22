@@ -1,6 +1,8 @@
-import "../styles/styles.scss";
-import { GlobalState } from "@/store/GlobalState";
-import Notify from "@/components/Notify";
+import "@/common/assets/css/bootstrap.min.css";
+import "@/common/assets/css/globals.css";
+
+import Notify from "@/common/components/Notify";
+import GlobalState from "@/common/store/GlobalState";
 
 function MyApp({ Component, pageProps }) {
   return (

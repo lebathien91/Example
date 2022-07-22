@@ -3,9 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@/Layout/*": ["src/views/Layout/*"],
-      "@/Components/*": ["src/views/Components/*"],
-      "@/Pages/*": ["src/views/Pages/*"]
+      "@/components/*": ["src/mommon/components/*"]
     }
   }
 }

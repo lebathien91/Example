@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    MONGODB_URL:
-      "mongodb+srv://kuchuoi:2261988@cluster0.kwsc0.mongodb.net/MyBlog_Dev?retryWrites=true&w=majority",
+    BASE_URL: "http://localhost:3000",
+    CLOUD_UPDATE_PRESET: "myblog",
+    CLOUD_NAME: "kuchuoi",
+    CLOUD_API: "https://api.cloudinary.com/v1_1/kuchuoi/image/upload",
   },
   reactStrictMode: false,
   swcMinify: true,
